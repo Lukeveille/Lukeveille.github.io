@@ -34,6 +34,7 @@ nav a {
   margin: 0;
 }
 nav a:hover {
+  text-decoration: none;
   background-color: #ddd;
 }
 /* Classes */
@@ -44,37 +45,68 @@ nav a:hover {
 .first {
   border-left: 1px solid #111;
 }
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.skill-list div {
+  padding: 1em 0;
+}
 
 /* Icons */
-.rails {
-  color: #CC1110;
+.skill-color {
+  fill: #fefefe;
+  transition: .2s;
 }
-.react {
-  color: #61DAFB;
+.skill-block {
+  text-align: center;
 }
-.html5 {
-  color: #E34F26;
+.skill-logo {
+  height: 5em;
+  display: block;
+  margin: .3em auto;
+  transition: .2s;
 }
-.css3 {
-  color: #1572B6;
+.skill-logo:hover {
+  height: 5.3em;
+  margin: 0 auto;
 }
-.sass {
-  color: #CC6699;
+
+.skill-logo:hover .html5 {
+  fill: #E34F26;
 }
-.js {
-  color: #F7DF1E;
+.skill-logo:hover .css3 {
+  fill: #1572B6;
 }
-.ruby {
-  color: #CC342D;
+.skill-logo:hover .sass {
+  fill: #CC6699;
 }
-.git {
-  color: #F05032;
+.skill-logo:hover .js {
+  fill: #F7DF1E;
 }
-.github {
-  color: #181717;
+.skill-logo:hover .react {
+  fill: #61DAFB;
 }
-.vscode {
-  color: #007ACC
+.skill-logo:hover .ruby {
+  fill: #CC342D;
+}
+.skill-logo:hover .rails {
+  fill: #CC1110;
+}
+.skill-logo:hover .git {
+  fill: #F05032;
+}
+.skill-logo:hover .github {
+  fill: #999;
+}
+.skill-logo:hover .vscode {
+  fill: #007ACC;
+}
+.skill-logo:hover .twitter {
+  fill: #1DA1F2;
+}
+.skill-logo:hover .linkedin {
+  fill: #0077B5;
 }
 
 /* IDs */
