@@ -154,6 +154,10 @@ section h2 {
   .skill-logo:hover {
     height: 7.3em;
   }
+  #about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 410px) {
   nav a,
