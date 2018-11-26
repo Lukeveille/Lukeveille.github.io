@@ -5,10 +5,11 @@ body {
   font-family: 'Aldrich', sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #fefefe;
 }
 main {
-  background-color: #000;
-  color: #fff;
+  background-color: #111;
+  color: #fefefe;
 }
 section {
   max-width: 900px;
@@ -22,18 +23,18 @@ li {
   list-style: none;
 }
 a {
-  color: #000;
+  color: #111;
   text-decoration: none;
   display: inline-block;
   transition: 0.2s;
 }
 nav a {
-  border-right: 1px solid #000;
+  border-right: 1px solid #111;
   padding: 1em;
   margin: 0;
 }
 nav a:hover {
-  background-color: #DDD;
+  background-color: #ddd;
 }
 /* Classes */
 .main-header {
@@ -41,12 +42,12 @@ nav a:hover {
   margin: 0;
 }
 .first {
-  border-left: 1px solid #000;
+  border-left: 1px solid #111;
 }
 
 /* Icons */
 .rails {
-  color: #CC0000;
+  color: #CC1110;
 }
 .react {
   color: #61DAFB;
@@ -79,12 +80,12 @@ nav a:hover {
 /* IDs */
 #projects a {
   border-radius: 5px;
-  background-color: #DDD;
-  border: 1px solid #DDD;
+  background-color: #ddd;
+  border: 1px solid #ddd;
   padding: .5em;
   margin: .2em;
 }
 #projects a:hover {
   background-color: #333;
-  color: #DDD;
+  color: #ddd;
 }
