@@ -37,6 +37,11 @@ nav a:hover {
   text-decoration: none;
   background-color: #ddd;
 }
+section h2 {
+  font-size: 3em;
+  margin: .25em 0;
+}
+
 /* Classes */
 .main-header {
   font-size: 5em;
@@ -49,9 +54,6 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.skill-list div {
-  padding: 1em 0;
-}
 
 /* Icons */
 .skill-color {
@@ -60,6 +62,7 @@ nav a:hover {
 }
 .skill-block {
   text-align: center;
+  padding: 1em 0;
 }
 .skill-logo {
   height: 5em;
