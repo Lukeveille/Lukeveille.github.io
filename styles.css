@@ -50,12 +50,12 @@ section h2 {
 .first {
   border-left: 1px solid #111;
 }
+
+/* Icons */
 .skill-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
-/* Icons */
 .skill-color {
   fill: #fefefe;
   transition: .2s;
@@ -75,7 +75,8 @@ section h2 {
   margin: 0 auto;
 }
 
-.skill-logo:hover .html5 {
+.skill-logo:hover .html5,
+.skill-logo:active .html5 {
   fill: #E34F26;
 }
 .skill-logo:hover .css3 {
@@ -123,4 +124,26 @@ section h2 {
 #projects a:hover {
   background-color: #333;
   color: #ddd;
+}
+
+@media screen and (max-width: 524px) {
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skill-logo {
+    height: 7em;
+  }
+  .skill-logo:hover {
+    height: 7.3em;
+  }
+}
+@media screen and (max-width: 415px) {
+  nav a,
+  .first {
+    border: none;
+    border-top: 1px solid #111;
+    display: block;
+    margin: 0 2em;
+  }
 }
