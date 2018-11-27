@@ -121,6 +121,8 @@ section h2 {
   background: url('images/profile-pic.jpg');
   background-size: 100%;
   margin: 1em;
+  max-width: 15em;
+  max-height: 15em;
 }
 
 /* IDs */
@@ -155,8 +157,11 @@ section h2 {
     height: 7.3em;
   }
   #about {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: block;
+    /* grid-template-rows: 1fr 1fr; */
+  }
+  .profile-pic {
+    margin: 1em auto;
   }
 }
 @media screen and (max-width: 410px) {
