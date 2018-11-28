@@ -1,7 +1,6 @@
 /* Main Elements */
 body {
   text-align: center;
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Aldrich', sans-serif;
   padding: 0;
   margin: 0;
@@ -50,6 +49,31 @@ section h2 {
 .first {
   border-left: 1px solid #111;
 }
+.info-box {
+  text-align: left;
+}
+.profile-pic {
+  border-radius: 50%;
+  background: url('images/profile-pic.jpg');
+  background-size: 100%;
+  margin: 1em;
+  max-width: 15em;
+  max-height: 15em;
+}
+.social-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  max-width: 200px;
+  margin: auto;
+}
+.email-link {
+  margin: .5em;
+  padding: .5em;
+}
+.email-link:hover {
+  background-color: #ddd;
+}
 
 /* Icons */
 .skill-list {
@@ -83,7 +107,6 @@ section h2 {
 .skill-logo:hover {
   height: 5.3em;
 }
-
 .social-logo {
   height: 2em;
   margin: .1em auto;
@@ -92,7 +115,6 @@ section h2 {
   margin: 0 auto;
   height: 2.2em;
 }
-
 .skill-logo:hover .html5,
 .skill-logo:active .html5 {
   fill: #E34F26;
@@ -121,11 +143,9 @@ section h2 {
 .skill-logo:hover .github {
   fill: #999;
 }
-
 .skill-logo:hover .vscode {
   fill: #007ACC;
 }
-
 .social-logo:hover .github {
   fill: #666;
 }
@@ -134,32 +154,6 @@ section h2 {
 }
 .social-logo:hover .linkedin {
   fill: #0077B5;
-}
-
-.info-box {
-  text-align: left;
-}
-.profile-pic {
-  border-radius: 50%;
-  background: url('images/profile-pic.jpg');
-  background-size: 100%;
-  margin: 1em;
-  max-width: 15em;
-  max-height: 15em;
-}
-.social-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  max-width: 200px;
-  margin: auto;
-}
-.email-link {
-  margin: .5em;
-  padding: .5em;
-}
-.email-link:hover {
-  background-color: #ddd;
 }
 
 /* IDs */
@@ -202,6 +196,7 @@ section h2 {
   font-weight: 700;
 }
 
+/* Project Pics */
 #mrplow-desktop {
   background: url('images/mrplow-desktop.png');
   background-size: 95%;
