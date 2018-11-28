@@ -60,19 +60,37 @@ section h2 {
   fill: #fefefe;
   transition: .2s;
 }
+.social-color {
+  fill: #111;
+  transition: .2s;
+}
 .skill-block {
   text-align: center;
   padding: 1em 0;
 }
+.skill-logo,
+.social-logo {
+  display: block;
+  transition: .2s;
+}
 .skill-logo {
   height: 5em;
-  display: block;
   margin: .3em auto;
-  transition: .2s;
+}
+.skill-logo:hover {
+  margin: 0 auto;
 }
 .skill-logo:hover {
   height: 5.3em;
+}
+
+.social-logo {
+  height: 2em;
+  margin: .1em auto;
+}
+.social-logo:hover {
   margin: 0 auto;
+  height: 2.2em;
 }
 
 .skill-logo:hover .html5,
@@ -103,13 +121,18 @@ section h2 {
 .skill-logo:hover .github {
   fill: #999;
 }
+
 .skill-logo:hover .vscode {
   fill: #007ACC;
 }
-.skill-logo:hover .twitter {
+
+.social-logo:hover .github {
+  fill: #666;
+}
+.social-logo:hover .twitter {
   fill: #1DA1F2;
 }
-.skill-logo:hover .linkedin {
+.social-logo:hover .linkedin {
   fill: #0077B5;
 }
 
@@ -123,6 +146,14 @@ section h2 {
   margin: 1em;
   max-width: 15em;
   max-height: 15em;
+}
+.social-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  max-width: 200px;
+  margin: auto;
+
 }
 
 /* IDs */
@@ -158,7 +189,6 @@ section h2 {
   }
   #about {
     display: block;
-    /* grid-template-rows: 1fr 1fr; */
   }
   .profile-pic {
     margin: 1em auto;
