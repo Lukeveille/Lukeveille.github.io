@@ -155,14 +155,18 @@ section h2 {
   margin: auto;
 }
 .email-link {
-  margin: 1em;
+  margin: .5em;
+  padding: .5em;
+}
+.email-link:hover {
+  background-color: #ddd;
 }
 
 /* IDs */
 #projects a {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: #ddd;
-  border: 1px solid #ddd;
+  border: 1px solid #666;
   padding: .5em;
   margin: .2em;
 }
