@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM Content Loaded');
 
-  // Specific mocal queries
+  // Specific modal queries
   let mrplowBtn = document.querySelector('#mrplow-btn');
   let mrplowModal = document.querySelector('#mrplow-modal');
   mrplowBtn.addEventListener('click', () => { showModal(mrplowModal) });
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let mathquizBtn = document.querySelector('#mathquiz-btn');
   let mathquizModal = document.querySelector('#mathquiz-modal');
   mathquizBtn.addEventListener('click', () => { showModal(mathquizModal) });
-  
+
   // Main modal controls
   let modalBG = document.querySelectorAll('.modal-bg');
   let modalX = document.querySelectorAll('.x-close-button');
@@ -30,4 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
   function hideModal(id) {
     id.setAttribute('class', 'display-none modal-bg');
   }
-})
+});
