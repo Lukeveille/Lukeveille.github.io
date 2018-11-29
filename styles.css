@@ -194,6 +194,7 @@ section h2 {
   padding: 1em;
   margin: .2em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* Project Pics */
@@ -216,6 +217,53 @@ section h2 {
   background: url('images/mathquiz-mobile.png');
   background-size: 80%;
   background-position: center 50%;
+}
+
+/* Modals */
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fefefe;
+  align-items: center;
+  justify-content: center;
+}
+.modal-box {
+  padding: 1em;
+  background-color: #111;
+  border: 1px solid #ddd;
+  display: inline-block;
+  height: 90vh;
+  width: 70vw;
+}
+.display-flex {
+  display: flex;
+}
+.display-none {
+  display: none;
+}
+.modal-top-row {
+  display: relative;
+  text-align: right;
+  padding: .2em 1.8em;
+}
+.x-close-button {
+  border-radius: 100%;
+  padding: .2em .35em .12em .35em;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  color: #111;
+  transition: all 0.2s;
+}
+.x-close-button:hover {
+  background-color: #666;
+  color: #ddd;
 }
 
 @media screen and (max-width: 720px) {
