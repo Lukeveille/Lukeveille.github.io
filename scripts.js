@@ -11,18 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
   mathquizBtn.addEventListener('click', () => { showModal(mathquizModal) });
 
   // Main modal controls
-  let modalBG = document.querySelectorAll('.modal-bg');
-  let modalX = document.querySelectorAll('.x-close-button');
-  let modalBox = document.querySelectorAll('.modal-box');
-  modalBG.forEach((modal) => {
-    modal.addEventListener('click', () => { hideModal(modal) });
-  });
-  modalX.forEach((btn) => {
-    let modalBox = btn.parentElement.parentElement.parentElement;
-    btn.addEventListener('click', () => { hideModal(modalBox) });
-  });
-  modalBox.forEach((modal) => {
-    modal.addEventListener('click', (e) => { e.stopPropagation(); })
+  document.querySelectorAll('.x-close-button').forEach((modalX) => {
+    let modalBox = modalX.parentElement.parentElement;
+    let modalBG = modalX.parentElement.parentElement.parentElement;
+    modalBox.addEventListener('click', (e) => { e.stopPropagation(); })
+    modalX.addEventListener('click', () => { hideModal(modalBG) });
+    modalBG.addEventListener('click', () => { hideModal(modalBG) });
+    document.addEventListener('keyup', (e) => { if (e.keyCode === 27) { hideModal(modalBG); }});
   });
   function showModal(id) {
     id.setAttribute('class', 'display-flex modal-bg');

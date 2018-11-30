@@ -230,14 +230,14 @@ section h2 {
   color: #fefefe;
   align-items: center;
   justify-content: center;
+  transition: .2s;
 }
 .modal-box {
-  padding: 1em;
   background-color: #111;
   border: 1px solid #ddd;
   display: inline-block;
   height: 90vh;
-  width: 70vw;
+  width: 80vw;
 }
 .display-flex {
   display: flex;
@@ -248,17 +248,18 @@ section h2 {
 .modal-top-row {
   display: relative;
   text-align: right;
-  padding: .2em 1.8em;
+  padding: .33em 2.5em;
 }
 .x-close-button {
   border-radius: 100%;
-  padding: .2em .35em .12em .35em;
+  padding: .57em .60em .4em .65em;
   background-color: #ddd;
   border: 1px solid #ddd;
   display: inline-block;
   position: absolute;
   cursor: pointer;
   color: #111;
+  font-weight: 800;
   transition: all 0.2s;
 }
 .x-close-button:hover {
@@ -288,6 +289,9 @@ section h2 {
     width: 180px;
     text-align: center;
     margin: .25em auto;
+  }
+  .modal-box {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 524px) {
