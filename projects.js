@@ -1,10 +1,10 @@
 function ProjectModal(props) {
   const show = props.show? "flex" : "none"
   return (
-    <div class={"modal-bg display-" + show} id={props.name + "-modal"} onClick={() => {props.toggle()}}>
+    <div class={"modal-bg display-" + show} id={props.name + "-modal"} onClick={() => { props.toggle() }}>
       <div class="modal-box" onClick={(e) => { e.stopPropagation(); }}>
         <div class="modal-top-row">
-          <div class="x-close-button" onClick={() => {props.toggle()}}>X</div>
+          <div class="x-close-button" onClick={() => { props.toggle() }}>X</div>
         </div>
         {props.content}
       </div>

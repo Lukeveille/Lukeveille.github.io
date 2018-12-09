@@ -1,4 +1,7 @@
 /* Main Elements */
+html {
+  scroll-behavior: smooth;
+}
 body {
   text-align: center;
   font-family: 'Aldrich', sans-serif;
