@@ -62,8 +62,8 @@ class ProjectsView extends React.Component {
     return (
       <section id="projects">
         <h2>Projects</h2>
-        <ProjectDisplay name="mrplow" title="Mr. Plow" deskBG={{image: 'images/mrplow-desktop.png', size: '95%', position: 'center -25%'}} mobileBG={{image: 'images/mrplow-mobile.png', size: '95%', position: 'center 30%'}} github="https://github.com/StephenVarela/Mister-Plow" live="https://mr-plow.herokuapp.com" projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
-        <ProjectDisplay name="mathquiz" title="Math Quiz" deskBG={{image: 'images/mathquiz-desktop.png', size: '90%', position: 'center -25%'}} mobileBG={{image: 'images/mathquiz-mobile.png', size: '80%', position: 'center 50%'}} github="https://github.com/Lukeveille/math-practice-react" live="/math-practice-react" projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
+        <ProjectDisplay name="mrplow" title="Mr. Plow" github="https://github.com/StephenVarela/Mister-Plow" live="https://mr-plow.herokuapp.com" deskBG={{image: 'images/mrplow-desktop.png', size: '95%', position: 'center -25%'}} mobileBG={{image: 'images/mrplow-mobile.png', size: '95%', position: 'center 30%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
+        <ProjectDisplay name="mathquiz" title="Math Quiz" github="https://github.com/Lukeveille/math-practice-react" live="/math-practice-react" deskBG={{image: 'images/mathquiz-desktop.png', size: '90%', position: 'center -25%'}} mobileBG={{image: 'images/mathquiz-mobile.png', size: '80%', position: 'center 50%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
       </section>
     )
   }
