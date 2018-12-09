@@ -54,10 +54,10 @@ class ProjectsView extends React.Component {
   showProjectModal(project) {
     this.setState(prevState => ({ projectModal: prevState.projectModal === 0? project : 0 }))
   }
+  
   componentDidMount() {
     document.addEventListener('keyup', (e) => { if (e.keyCode === 27) { this.showProjectModal(0); }});
   }
-
   render() {
     return (
       <section id="projects">
