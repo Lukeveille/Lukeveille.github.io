@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-    <script src="scripts.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -21,7 +20,6 @@
     </header>
 
     <main>
-
       <section id="skills">
         <h2>Skills</h2>
         <div class="skill-list">
@@ -121,38 +119,6 @@
       <hr />
 
       <div id="projects-component"></div>
-
-      <section id="projects">
-        <h2>Projects</h2>
-
-        <article>
-          <h3>Mr. Plow</h3>
-          <div class="project">
-            <img class="desktop-frame" id="mrplow-desktop" src="images/monitor-frame-498x291.png" />
-            <div class="project-buttons">
-              <a href="https://github.com/StephenVarela/Mister-Plow" target="_blank">GitHub</a>
-              <a href="https://mr-plow.herokuapp.com" target="_blank">Live</a>
-              <!-- <a id="mrplow-btn">Details</a> -->
-            </div>
-            <img class="mobile-frame" id="mrplow-mobile" src="images/mobile-frame-291x144.png" />
-          </div>
-        </article>
-
-        <article>
-          <h3>Math Quiz</h3>
-          <div class="project">
-            <img class="desktop-frame" id="mathquiz-desktop" src="images/monitor-frame-498x291.png" />
-            <div class="project-buttons">
-              <a href="https://github.com/Lukeveille/math-practice-react" target="_blank">GitHub</a>
-              <a href="/math-practice-react" target="_blank">Live</a>
-              <!-- <a id="mathquiz-btn">Details</a> -->
-            </div>
-            <img class="mobile-frame" id="mathquiz-mobile" src="images/mobile-frame-291x144.png" />
-          </div>
-        </article>
-
-      </section>
-
     </main>
     
     <footer id="contact">
@@ -180,28 +146,10 @@
       <a href="mailto:luke@lukeleveille.com" class="email-link">luke@lukeleveille.com</a>
     </footer>
 
-    <div class="display-none modal-bg" id="mrplow-modal">
-      <div class="modal-box">
-          <div class="modal-top-row">
-            <div class="x-close-button">X</div>
-          </div>
-        <h1>Mr Plow!</h1>
-      </div>
-    </div>
-
-    <div class="display-none modal-bg" id="mathquiz-modal">
-      <div class="modal-box">
-          <div class="modal-top-row">
-            <div class="x-close-button">X</div>
-          </div>
-        <h1>Math Quiz!</h1>
-      </div>
-    </div>
-
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-
-    <script src="projects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script src="projects.js" type="text/babel"></script>
 
   </body>
 </html>

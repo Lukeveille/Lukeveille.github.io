@@ -115,63 +115,62 @@ section h2 {
   margin: 0 auto;
   height: 2.2em;
 }
-
-.html5 {
+/* .html5 { 
   fill: #f9dad2;
-}
-.skill-logo:hover .html5 {
-  fill: #E34F26;
 }
 .css3 {
   fill: #d1e9fa;
 }
-.skill-logo:hover .css3 {
-  fill: #1572B6;
-}
 .sass {
   fill: #f2d9e6;
-}
-.skill-logo:hover .sass {
-  fill: #CC6699;
 }
 .js {
   fill: #fdf8ce;
 }
-.skill-logo:hover .js {
-  fill: #F7DF1E;
-}
 .react {
   fill: #e1f8fe;
-}
-.skill-logo:hover .react {
-  fill: #61DAFB;
 }
 .ruby {
   fill: #f6d7d5;
 }
-.skill-logo:hover .ruby {
-  fill: #CC342D;
-}
 .rails {
   fill: #fbd0d0;
-}
-.skill-logo:hover .rails {
-  fill: #CC1110;
 }
 .git {
   fill: #fbd6d0;
 }
-.skill-logo:hover .git {
-  fill: #F05032;
-}
 .github {
   fill: #EEE;
 }
-.skill-logo:hover .github {
-  fill: #999;
-}
 .vscode {
   fill: #ccebff;
+} */
+.skill-logo:hover .html5 {
+  fill: #E34F26;
+}
+.skill-logo:hover .css3 {
+  fill: #1572B6;
+}
+.skill-logo:hover .sass {
+  fill: #CC6699;
+}
+.skill-logo:hover .js {
+  fill: #F7DF1E;
+}
+.skill-logo:hover .react {
+  fill: #61DAFB;
+}
+.skill-logo:hover .ruby {
+  fill: #CC342D;
+}
+.skill-logo:hover .rails {
+  fill: #CC1110;
+}
+.skill-logo:hover .git {
+  fill: #F05032;
+}
+.skill-logo:hover .github {
+  fill: #999;
 }
 .skill-logo:hover .vscode {
   fill: #007ACC;
@@ -228,28 +227,6 @@ section h2 {
   margin: .2em;
   font-weight: 700;
   cursor: pointer;
-}
-
-/* Project Pics */
-#mrplow-desktop {
-  background: url('images/mrplow-desktop.png');
-  background-size: 95%;
-  background-position: center -25%;
-}
-#mrplow-mobile {
-  background: url('images/mrplow-mobile.png');
-  background-size: 95%;
-  background-position: center 30%;
-}
-#mathquiz-desktop {
-  background: url('images/mathquiz-desktop.png');
-  background-size: 90%;
-  background-position: center -25%;
-}
-#mathquiz-mobile {
-  background: url('images/mathquiz-mobile.png');
-  background-size: 80%;
-  background-position: center 50%;
 }
 
 /* Modals */
