@@ -63,7 +63,7 @@ class ProjectsView extends React.Component {
       <section id="projects">
         <h2>Projects</h2>
         <ProjectDisplay name="mrplow" title="Mr. Plow" github="https://github.com/StephenVarela/Mister-Plow" live="https://mr-plow.herokuapp.com" deskBG={{image: 'images/mrplow-desktop.png', size: '95%', position: 'center -25%'}} mobileBG={{image: 'images/mrplow-mobile.png', size: '95%', position: 'center 30%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
-        <ProjectDisplay name="mathquiz" title="Math Quiz" github="https://github.com/Lukeveille/math-quiz" live="/math-quiz" deskBG={{image: 'images/mathquiz-desktop.png', size: '90%', position: 'center 130%'}} mobileBG={{image: 'images/mathquiz-mobile.png', size: '85%', position: 'center 50%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
+        <ProjectDisplay name="mathquiz" title="Math Quiz" github="https://github.com/Lukeveille/math-quiz" live="/math-quiz" deskBG={{image: 'images/mathquiz-desktop.png', size: '115%', position: 'center -20%'}} mobileBG={{image: 'images/mathquiz-mobile.png', size: '90%', position: 'center 65%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
       </section>
     )
   }
