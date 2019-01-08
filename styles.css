@@ -252,6 +252,10 @@ section h2 {
   height: 90vh;
   width: 80vw;
 }
+.modal-box h3,
+.modal-box h4 {
+  margin: .2em;
+}
 .display-flex {
   display: flex;
 }

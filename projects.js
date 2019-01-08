@@ -23,7 +23,12 @@ function ProjectDisplay(props) {
     backgroundSize: props.mobileBG.size,
     backgroundPosition: props.mobileBG.position,
   }
-  const modalContent = <h1>{props.title}</h1>
+  const modalContent = <div>
+      <h3>{props.title}</h3>
+      <h4>{props.stack}</h4>
+      <p>{props.description}</p>
+      {props.unique}
+    </div>
 
   return (
     <article>
@@ -31,13 +36,19 @@ function ProjectDisplay(props) {
       <div class="project">
         <img class="desktop-frame" style={deskBg} id={props.name + "-desktop"} src="images/monitor-frame-498x291.png" />
         <div class="project-buttons">
-          <a href={props.github} target="_blank">GitHub</a>
           <a href={props.live} target="_blank">Live</a>
           {/* <a id={props.name + "-btn"} onClick={() => { props.showProjectModal(props.name) }}>Details</a> */}
+          <a href={props.github} target="_blank">GitHub</a>
         </div>
         <img class="mobile-frame" style={mobileBg} id={props.name + "-mobile"} src="images/mobile-frame-291x144.png" />
       </div>
-      <ProjectModal name={props.name} show={props.projectModal === props.name} toggle={props.showProjectModal} content={modalContent} />
+      <ProjectModal 
+        name={props.name}
+        show={props.projectModal === props.name}
+        toggle={props.showProjectModal}
+        content={modalContent}
+        
+      />
     </article>
   )
 }
@@ -46,7 +57,7 @@ class ProjectsView extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      projectModal: 0,
+      projectModal: "mrplow",
     }
     this.showProjectModal = this.showProjectModal.bind(this);
   }
@@ -62,8 +73,29 @@ class ProjectsView extends React.Component {
     return (
       <section id="projects">
         <h2>Projects</h2>
-        <ProjectDisplay name="mrplow" title="Mr. Plow" github="https://github.com/StephenVarela/Mister-Plow" live="https://mr-plow.herokuapp.com" deskBG={{image: 'images/mrplow-desktop.png', size: '95%', position: 'center -25%'}} mobileBG={{image: 'images/mrplow-mobile.png', size: '95%', position: 'center 30%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
-        <ProjectDisplay name="mathquiz" title="Math Quiz" github="https://github.com/Lukeveille/math-quiz" live="/math-quiz" deskBG={{image: 'images/mathquiz-desktop.png', size: '115%', position: 'center -14%'}} mobileBG={{image: 'images/mathquiz-mobile.png', size: '90%', position: 'center 65%'}} projectModal={this.state.projectModal} showProjectModal={this.showProjectModal} />
+        <ProjectDisplay
+          name="mrplow"
+          title="Mr. Plow"
+          stack="Ruby on Rails - React - PostgresSQL - SCSS"
+          description="A way to connect shovelers with driveways"
+          github="https://github.com/StephenVarela/Mister-Plow"
+          live="https://mr-plow.herokuapp.com"
+          deskBG={{image: 'images/mrplow-desktop.png', size: '95%', position: 'center -25%'}}
+          mobileBG={{image: 'images/mrplow-mobile.png', size: '95%', position: 'center 30%'}}
+          projectModal={this.state.projectModal}
+          showProjectModal={this.showProjectModal}
+        />
+        <ProjectDisplay
+          name="mathquiz"
+          title="Math Quiz"
+          stack="React - Vanilla JS"
+          github="https://github.com/Lukeveille/math-quiz"
+          live="/math-quiz"
+          deskBG={{image: 'images/mathquiz-desktop.png', size: '115%', position: 'center -14%'}}
+          mobileBG={{image: 'images/mathquiz-mobile.png', size: '90%', position: 'center 65%'}}
+          projectModal={this.state.projectModal}
+          showProjectModal={this.showProjectModal}
+        />
       </section>
     )
   }
