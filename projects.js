@@ -57,7 +57,7 @@ class ProjectsView extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      projectModal: "mrplow",
+      projectModal: 0,
     }
     this.showProjectModal = this.showProjectModal.bind(this);
   }
