@@ -37,7 +37,7 @@ function ProjectDisplay(props) {
         <img class="desktop-frame" style={deskBg} id={props.name + "-desktop"} src="images/monitor-frame-498x291.png" />
         <div class="project-buttons">
           <a href={props.live} target="_blank">Live</a>
-          {/* <a id={props.name + "-btn"} onClick={() => { props.showProjectModal(props.name) }}>Details</a> */}
+          <a href={"#" + props.name + "-btn"} id={props.name + "-btn"} onClick={() => { props.showProjectModal(props.name) }}>Details</a>
           <a href={props.github} target="_blank">GitHub</a>
         </div>
         <img class="mobile-frame" style={mobileBg} id={props.name + "-mobile"} src="images/mobile-frame-291x144.png" />
@@ -89,6 +89,7 @@ class ProjectsView extends React.Component {
           name="mathquiz"
           title="Math Quiz"
           stack="React - Vanilla JS"
+          description="My first web app, and it's many iterations."
           github="https://github.com/Lukeveille/math-quiz"
           live="/math-quiz"
           deskBG={{image: 'images/mathquiz-desktop.png', size: '115%', position: 'center -14%'}}
