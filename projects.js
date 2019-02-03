@@ -37,7 +37,7 @@ function ProjectDisplay(props) {
         <img class="desktop-frame" style={deskBg} id={props.name + "-desktop"} src="images/monitor-frame-498x291.png" />
         <div class="project-buttons">
           <a href={props.live} target="_blank">Live</a>
-          <a href={"#" + props.name + "-btn"} id={props.name + "-btn"} onClick={() => { props.showProjectModal(props.name) }}>Details</a>
+          {/* <a href={"#" + props.name + "-btn"} id={props.name + "-btn"} onClick={() => { props.showProjectModal(props.name) }}>Details</a> */}
           <a href={props.github} target="_blank">GitHub</a>
         </div>
         <img class="mobile-frame" style={mobileBg} id={props.name + "-mobile"} src="images/mobile-frame-291x144.png" />
