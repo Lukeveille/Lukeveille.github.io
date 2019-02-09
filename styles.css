@@ -133,11 +133,17 @@ section h2 {
 .react {
   fill: #e1f8fe;
 }
+.redux {
+  fill: #764abc;
+}
 .ruby {
   fill: #f6d7d5;
 }
 .rails {
   fill: #fbd0d0;
+}
+.docker {
+  fill: #1488c6;
 }
 .git {
   fill: #fbd6d0;
@@ -163,11 +169,17 @@ section h2 {
 .skill-logo:hover .react {
   fill: #61DAFB;
 }
+.skill-logo:hover .redux {
+  fill: #764abc;
+}
 .skill-logo:hover .ruby {
   fill: #CC342D;
 }
 .skill-logo:hover .rails {
   fill: #CC1110;
+}
+.skill-logo:hover .docker {
+  fill: #1488c6;
 }
 .skill-logo:hover .git {
   fill: #F05032;
