@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "./static/media/monitor-frame-498x291.8b8f72a5.png"
   },
   {
-    "revision": "aad60c25a9d92a5eb3cf",
-    "url": "./static/css/main.3ad86ee1.chunk.css"
+    "revision": "0b7a3940f63a6320a2f0",
+    "url": "./static/css/main.c99166e4.chunk.css"
   },
   {
     "revision": "0aeff715dc4ff4eb5a75",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "./static/media/mobile-frame-291x144.8c1e5267.png"
   },
   {
-    "revision": "aad60c25a9d92a5eb3cf",
-    "url": "./static/js/main.aad60c25.chunk.js"
+    "revision": "0b7a3940f63a6320a2f0",
+    "url": "./static/js/main.0b7a3940.chunk.js"
   },
   {
     "revision": "e060bf0a3af4f1a405137c5ec1fe3b3a",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "./static/media/mathquiz-mobile.c8c8499a.png"
   },
   {
-    "revision": "026b096edd40f1dedd1c5b7bafc08c80",
+    "revision": "575ae71188974ae33d96d28ca5953f42",
     "url": "./index.html"
   }
 ];

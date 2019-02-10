@@ -1,7 +1,7 @@
 {
-  "main.css": "./static/css/main.3ad86ee1.chunk.css",
-  "main.js": "./static/js/main.aad60c25.chunk.js",
-  "main.js.map": "./static/js/main.aad60c25.chunk.js.map",
+  "main.css": "./static/css/main.c99166e4.chunk.css",
+  "main.js": "./static/js/main.0b7a3940.chunk.js",
+  "main.js.map": "./static/js/main.0b7a3940.chunk.js.map",
   "static/js/1.0aeff715.chunk.js": "./static/js/1.0aeff715.chunk.js",
   "static/js/1.0aeff715.chunk.js.map": "./static/js/1.0aeff715.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
@@ -13,8 +13,8 @@
   "static/media/mathquiz-desktop.png": "./static/media/mathquiz-desktop.3c963bb9.png",
   "static/media/mathquiz-mobile.png": "./static/media/mathquiz-mobile.c8c8499a.png",
   "static/media/mobile-frame-291x144.png": "./static/media/mobile-frame-291x144.8c1e5267.png",
-  "static/css/main.3ad86ee1.chunk.css.map": "./static/css/main.3ad86ee1.chunk.css.map",
+  "static/css/main.c99166e4.chunk.css.map": "./static/css/main.c99166e4.chunk.css.map",
   "index.html": "./index.html",
-  "precache-manifest.7274c5d4c7f0763dae79b1a4e322b032.js": "./precache-manifest.7274c5d4c7f0763dae79b1a4e322b032.js",
+  "precache-manifest.90f21a23c3716b809fee387899051aa8.js": "./precache-manifest.90f21a23c3716b809fee387899051aa8.js",
   "service-worker.js": "./service-worker.js"
 }
